@@ -6,10 +6,7 @@ Streamlit based Digital Resume/Portfolio
 Portfolio/
 ├── assets/
 │ ├── Resume.pdf # Resume File
-│ └── profile_photo.png # Profile Image
-│
-├── styles/
-│ └── main.css # Custom CSS styles for Streamlit app
+│ └── photos.png # Portfolio Required Photos
 │
 └── app.py # Main Streamlit application file
 ```
