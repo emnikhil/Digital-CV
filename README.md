@@ -26,8 +26,8 @@ This is a personal digital resume and portfolio web app built using Streamlit. I
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
+git clone https://github.com/yourusername/Digital-CV.git
+cd Digital-CV
 ```
 2. **Replace assets and photos**
    
@@ -73,7 +73,7 @@ Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your di
 
 # Project Structure
 ```
-Portfolio/
+Digital-CV/
 ├── assets/
 │   ├── Resume.pdf              # Resume file (PDF)
 │   ├── photos/                 # Folder containing portfolio photos (png/jpg)
