@@ -10,8 +10,6 @@ Portfolio/
 │   │   ├── photo1.png
 │   │   ├── photo2.jpg
 │   │   └── ...                 
-│   └── .streamlit/
-│       └── secrets.toml       # Streamlit secrets file (for sensitive info, gitignored)
 │
 ├── .gitignore                 # Git ignore file (includes .streamlit/ and other ignores)
 ├── app.py                     # Main Streamlit application file
@@ -28,4 +26,6 @@ Portfolio/
 ├── styles/                    # CSS files for custom styling
 │   └── main.css
 └── README.md                  # Project README
+├── .streamlit/
+│   └── secrets.toml           # Streamlit secrets file (for sensitive info, gitignored)
 ```
