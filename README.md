@@ -23,22 +23,22 @@ This is a personal digital resume and portfolio web app built using Streamlit. I
 
 ### Steps to Use
 
-1. **Clone the repository**
+1. ## Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/Digital-CV.git
 cd Digital-CV
 ```
-2. **Replace assets and photos**
+2. ## Replace assets and photos
    
 Update the images and certificates inside the assets/ folder with your own images and files.
 
-3. **Update your details**
+3. ## Update your details
    
 Modify the Python files inside the ```sections/ directory``` to update your personal information, skills, experience, projects, and certificates.
 Update ```config.py``` with your project and certificate details.
 
-4. **Steps to implement email sending with your contact form:**
+4. ## Steps to implement email sending with your contact form:
 
 Setup: Allow Gmail SMTP access
    
@@ -50,7 +50,7 @@ Create an App Password (recommended) if you have 2FA enabled on your Google acco
   
 Or allow "Less secure app access" (not recommended).
 
-5. **Configure email for contact form**
+5. ## Configure email for contact form
    
 Create or update the ```.streamlit/secrets.toml``` file (or use the existing one) with your email credentials for the contact form to function correctly.
 
@@ -60,14 +60,14 @@ address = "your.email@example.com"
 password = "your_email_password"
 ```
 
-6. **Run the app on local**
+6. ## Run the app on local
 
 ```
 python3 -u portfolio/app.py
 python3 -m streamlit run app.py
 ```
 
-7. **Open in your browser**
+7. ## Open in your browser
    
 Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your digital CV in action.
 
