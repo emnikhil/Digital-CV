@@ -84,8 +84,8 @@ Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your di
 
 ```
 Digital-CV/
-├── .devcontainer/             # Dev container config (for Codespaces / VS Code Remote Containers)
-│   └── devcontainer.json
+├── .devcontainer/             # Dev container config
+│   └── devcontainer.json      # (for Codespaces / VS Code Remote Containers)
 │
 ├── assets/                    # Static assets like resume and photos
 │   ├── Resume.pdf
