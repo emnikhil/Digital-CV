@@ -8,10 +8,10 @@ A personal digital resume and portfolio web application built with Streamlit, de
 
 ## Features
 
-- Clean, responsive design with dark mode support
-- Sections for Experience, Skills, Work History, Projects, Certificates
-- Contact form with email sending functionality
-- Easy to customize and extend
+- Clean, responsive design with seamless dark mode support
+- Dedicated sections for Experience, Skills, Work History, Projects, and Certificates
+- Integrated contact form with email sending capability
+- Easily customizable and extensible for personal or professional use
 
 ---
 
@@ -21,7 +21,7 @@ A personal digital resume and portfolio web application built with Streamlit, de
 
 - Python 3.7 or higher
 - pip package manager
-- streamilt : ```pip install streamlit```
+- streamlit : ```pip install streamlit```
 
 ### Steps to Use
 
@@ -33,28 +33,28 @@ cd Digital-CV
 ```
 ## 2. Replace assets and photos
    
-Update the images and certificates inside the assets/ folder with your own images and files.
+Update the images and certificates inside the assets/ folder with your own files.
 
 ## 3. Update your details
    
-Modify the Python files inside the ```sections/ directory``` to update your personal information, skills, experience, projects, and certificates.
-Update ```config.py``` with your project and certificate details.
+Modify the Python files inside the ```sections/``` directory to update your personal information, skills, experience, projects, and certificates.
+Update ```config.py``` with your project, work history and certificate details.
 
 ## 4. Steps to implement email sending with your contact form:
 
-Setup: Allow Gmail SMTP access
+- Setup: Allow Gmail SMTP access  
+- Use a Gmail account to send emails.  
+- Create an App Password (recommended) if you have 2FA enabled on your Google account:
    
-Use a Gmail account to send emails.
-  
-Create an App Password (recommended) if you have 2FA enabled on your Google account:
-  
-```https://support.google.com/accounts/answer/185833```
-  
-Or allow "Less secure app access" (not recommended).
+       ```
+       https://support.google.com/accounts/answer/185833
+       ```
+   
+  Or allow "Less secure app access" (not recommended).
 
 ## 5. Configure email for contact form
    
-Create or update the ```.streamlit/secrets.toml``` file (or use the existing one) with your email credentials for the contact form to function correctly.
+Create ```.streamlit/secrets.toml``` file with your email credentials for the contact form to work:
 
 ```
 [email]
@@ -65,7 +65,16 @@ password = "your_email_password"
 ## 6. Run the app on local
 
 ```
+python -u portfolio/app.py
+
+streamlit run app.py
+```
+
+OR - if Python not added to ```PATH```
+
+```
 python3 -u portfolio/app.py
+
 python3 -m streamlit run app.py
 ```
 
@@ -98,9 +107,9 @@ Digital-CV/
 ├── styles/                    # Custom CSS files
 │   └── main.css
 │
-├── .gitignore                 # Ignore rules for Git - Should include .streamlit/
+├── .gitignore                 # Git ignore rules (include .streamlit/)
 ├── .streamlit/                # 🔒 Sensitive info (DO NOT push to GitHub)
-│   └── secrets.toml           # Streamlit secrets file (for sensitive info, gitignored) To be kept on local only
+│   └── secrets.toml           # Streamlit secrets (kept local only)
 ├── LICENSE                    # Project license
 ├── README.md                  # Project documentation
 ├── app.py                     # Main Streamlit app
