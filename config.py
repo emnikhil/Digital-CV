@@ -29,7 +29,7 @@ CERTIFICATES = [
     },
     {
         "name": "ACE: Growth Catalyst Award - (FY22 Q4)",
-        "img_path": current_dir / "assets" / "photos" / "Ace_Award.png"
+        "img_path": current_dir / "assets" / "photos" / "Ace_Award.jpeg"
     }
 ]
 
