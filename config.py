@@ -7,8 +7,8 @@ PROFILE_PIC_PATH = current_dir / "assets" / "photos" / "profile.png"
 RESUME_PATH = current_dir / "assets" / "Resume(Nikhil Gupta).pdf"
 
 EXL_LOGO_PATH = current_dir / "assets" / "photos" / "EXL_Service_logo.png"
-ACCENTURE_LOGO_PATH = current_dir / "assets" / "photos" / "accenture_logo.png"
-KMITL_LOGO_PATH = current_dir / "assets" / "photos" / "kmitl_logo.png"
+ACCENTURE_LOGO_PATH = current_dir / "assets" / "photos" / "Accenture_logo.png"
+KMITL_LOGO_PATH = current_dir / "assets" / "photos" / "KMITL_logo.png"
 
 PROJECT_MEDIA = {
     "Sign Language to Text Conversion": current_dir / "assets" / "photos" / "sign_language.png",
