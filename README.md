@@ -1,6 +1,6 @@
 # Digital CV
 
-This is a personal digital resume and portfolio web app built using Streamlit. It showcases skills, experience, projects, certificates, and includes a contact form to reach out directly via email.
+A personal digital resume and portfolio web application built with Streamlit, designed to elegantly showcase skills, professional experience, projects, and certificates. It also features an integrated contact form for direct communication via email.
 
 ![UI](assets/photos/UI.png)
 
