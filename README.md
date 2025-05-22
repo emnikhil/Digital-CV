@@ -74,31 +74,37 @@ python3 -m streamlit run app.py
 Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your digital CV in action.
 
 # Project Structure
+
 ```
 Digital-CV/
-├── assets/
-│   ├── Resume.pdf              # Resume file (PDF)
-│   ├── photos/                 # Folder containing portfolio photos (png/jpg)
-│   │   ├── photo1.png
-│   │   ├── photo2.jpg
-│   │   └── ...                 
+├── .devcontainer/             # Dev container config (for Codespaces / VS Code Remote Containers)
+│   └── devcontainer.json
 │
-├── .gitignore                 # Git ignore file (includes .streamlit/ and other ignores)
-├── app.py                     # Main Streamlit application file
-├── config.py                  # Constants, paths, social links, settings
-├── helpers.py                 # Helper functions (base64, css loader, etc.)
-├── sections/                  # Modular UI sections
-│   ├── header.py              # Header section
-│   ├── experience.py          # Experience & qualifications
-│   ├── skills.py              # Technical skills section
-│   ├── work_history.py        # Work history entries
-│   ├── projects.py            # Projects section
-│   ├── certificates.py        # Certificates & accomplishments
-│   └── contact.py             # Contact form logic
-├── styles/                    # CSS files for custom styling
+├── assets/                    # Static assets like resume and photos
+│   ├── Resume.pdf
+│   └── photos/
+│       ├── photo1.png
+│       └── photo2.jpg
+│
+├── sections/                  # Streamlit modular UI components
+│   ├── header.py
+│   ├── experience.py
+│   ├── skills.py
+│   ├── work_history.py
+│   ├── projects.py
+│   ├── certificates.py
+│   └── contact.py
+│
+├── styles/                    # Custom CSS files
 │   └── main.css
-└── README.md                  # Project README
-├── .streamlit/
-│   └── secrets.toml           # Streamlit secrets file (for sensitive info, gitignored)
-|── requirements.txt           # Contains List of all Libraries Used
+│
+├── .gitignore                 # Ignore rules for Git - Should include .streamlit/
+├── .streamlit/                # 🔒 Sensitive info (DO NOT push to GitHub)
+│   └── secrets.toml           # Streamlit secrets file (for sensitive info, gitignored) To be kept on local only
+├── LICENSE                    # Project license
+├── README.md                  # Project documentation
+├── app.py                     # Main Streamlit app
+├── config.py                  # App configuration and constants
+├── helpers.py                 # Utility/helper functions
+└── requirements.txt           # Python dependencies
 ```
