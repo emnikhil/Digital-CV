@@ -2,6 +2,8 @@
 
 This is a personal digital resume and portfolio web app built using Streamlit. It showcases skills, experience, projects, certificates, and includes a contact form to reach out directly via email.
 
+![UI](assets/photos/UI.png)
+
 ---
 
 ## Features

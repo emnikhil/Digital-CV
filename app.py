@@ -15,8 +15,9 @@ def load_css(file_path):
         css = f.read()
     st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
+load_css("styles/main.css") 
+
 def main():
-    load_css("styles/main.css") 
 
     show_header()
     show_experience()
