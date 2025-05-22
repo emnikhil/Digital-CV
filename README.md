@@ -46,9 +46,7 @@ Update ```config.py``` with your project, work history and certificate details.
 - Use a Gmail account to send emails.  
 - Create an App Password (recommended) if you have 2FA enabled on your Google account:
    
-       ```
-       https://support.google.com/accounts/answer/185833
-       ```
+       https://support.google.com/accounts/answer/185833    
    
   Or allow "Less secure app access" (not recommended).
 
