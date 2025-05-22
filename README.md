@@ -100,4 +100,5 @@ Digital-CV/
 └── README.md                  # Project README
 ├── .streamlit/
 │   └── secrets.toml           # Streamlit secrets file (for sensitive info, gitignored)
+|── requirements.txt           # Contains List of all Libraries Used
 ```
