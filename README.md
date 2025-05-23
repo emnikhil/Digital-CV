@@ -84,7 +84,7 @@ Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your di
 
 Steps:
 
-- In your forked repository, go to .github/workflows/keep_alive.yml
+- Go to .github/workflows/keep_alive.yml
 - Replace the placeholder app ```URL``` with your actual ```Streamlit app URL```
 
 ```yaml
