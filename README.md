@@ -80,6 +80,29 @@ python3 -m streamlit run app.py
    
 Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your digital CV in action.
 
+## 8. Prevent Streamlit app from going to sleep
+
+Steps:
+
+- In your forked repository, go to .github/workflows/keep_alive.yml
+- Replace the placeholder app ```URL``` with your actual ```Streamlit app URL```
+
+```yaml
+name: Keep Streamlit App Awake
+
+on:
+  schedule:
+    # Runs every 12 hours (00:00 and 12:00 UTC)
+    - cron: '0 */12 * * *'
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl your Streamlit app
+        run: curl -s --head https://<username>.streamlit.app || true
+```
+
 # Project Structure
 
 ```
