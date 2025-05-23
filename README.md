@@ -87,6 +87,10 @@ Digital-CV/
 ├── .devcontainer/             # Dev container config
 │   └── devcontainer.json      # (for Codespaces / VS Code Remote Containers)
 │
+├── .github/                   # GitHub Actions workflows
+│ └── workflows/
+│ └── keep_alive.yml           # Keeps Streamlit app awake using scheduled pings
+|
 ├── assets/                    # Static assets like resume and photos
 │   ├── Resume.pdf
 │   └── photos/
