@@ -14,9 +14,9 @@ def show_contact_form():
         return
 
     with st.form("contact_form", clear_on_submit=True):
-        name = st.text_input("Your Name", max_chars=50)
-        email = st.text_input("Your Email", max_chars=50)
-        message = st.text_area("Your Message", max_chars=1000)
+        name = st.text_input("Your Name*", max_chars=50)
+        email = st.text_input("Your Email*", max_chars=50)
+        message = st.text_area("Your Message*", min_chars=20, max_chars=1000)
         submitted = st.form_submit_button("Send Message")
 
         if submitted:
