@@ -16,14 +16,16 @@ def show_contact_form():
     with st.form("contact_form", clear_on_submit=True):
         name = st.text_input("Your Name*", max_chars=50)
         email = st.text_input("Your Email*", max_chars=50)
-        message = st.text_area("Your Message*", min_chars=20, max_chars=1000)
+        message = st.text_area("Your Message*", max_chars=1000)
         submitted = st.form_submit_button("Send Message")
 
         if submitted:
             if not name or not email or not message:
-                st.error("Please fill out all fields before submitting.")
+                st.error("❌ Please fill out all fields before submitting.")
+            elif len(message.strip()) < 20:
+                st.error("❌ Message must be at least 20 characters long.")
             elif "@" not in email or "." not in email:
-                st.error("Please enter a valid email address.")
+                st.error("❌ Please enter a valid email address.")
             else:
                 try:
                     send_email(name, email, message, EMAIL_ADDRESS, EMAIL_PASSWORD)
