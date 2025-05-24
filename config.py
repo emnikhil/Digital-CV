@@ -32,7 +32,7 @@ CERTIFICATES = [
         "img_path": current_dir / "assets" / "photos" / "Ace_Award.png"
     },
     {
-        "name": "Internationl Exchange Internship",
+        "name": "Internationl Exchange Program",
         "img_path": current_dir / "assets" / "photos" / "internship.png"
     }
 ]
