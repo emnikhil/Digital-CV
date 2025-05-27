@@ -93,13 +93,14 @@ name: Keep Streamlit App Awake
 on:
   schedule:
     - cron: '0 */3 * * *'
+  workflow_dispatch:
 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
     steps:
       - name: Curl your Streamlit app
-        run: curl -s --head https://nikhilgupta.streamlit.app || true
+        run: curl -s -L https://nikhilgupta.streamlit.app || true
 ```
 
 # Project Structure
