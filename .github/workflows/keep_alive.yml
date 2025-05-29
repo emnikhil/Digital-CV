@@ -3,7 +3,7 @@ name: Keep Streamlit App Awake
 on:
   schedule:
     - cron: '*/28 * * * *'
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:
 
 jobs:
   keep-alive:
@@ -12,12 +12,13 @@ jobs:
       - name: Wake and ping app with retries
         run: |
           echo "Pinging Streamlit app..."
+
           curl -sSfL \
-          --retry 3 \               # Retry up to 3 times
-          --retry-delay 10 \        # Wait 10s between retries
-          --retry-max-time 60 \     # Max 60s for all retries
-          --max-time 30 \           # Timeout single request after 30s
-          -H "Cache-Control: no-cache" \  # Prevent caching
-          "https://nikhilgupta.streamlit.app" || echo "Ping failed"
-          
+            --retry 3 \
+            --retry-delay 10 \
+            --retry-max-time 60 \
+            --max-time 30 \
+            -H "Cache-Control: no-cache" \
+            "https://nikhilgupta.streamlit.app" || echo "Ping failed"
+
           echo "Ping completed at $(date)"
