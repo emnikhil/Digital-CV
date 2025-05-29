@@ -92,15 +92,25 @@ name: Keep Streamlit App Awake
 
 on:
   schedule:
-    - cron: '0 */3 * * *'
-  workflow_dispatch:
+    - cron: '*/25 * * * *'
+  workflow_dispatch:  # Allows manual triggering
 
 jobs:
   keep-alive:
     runs-on: ubuntu-latest
     steps:
-      - name: Curl your Streamlit app
-        run: curl -s -L https://nikhilgupta.streamlit.app || true
+      - name: Wake and ping app with retries
+        run: |
+          echo "Pinging Streamlit app..."
+          curl -sSfL \
+          --retry 3 \               # Retry up to 3 times
+          --retry-delay 10 \        # Wait 10s between retries
+          --retry-max-time 60 \     # Max 60s for all retries
+          --max-time 30 \           # Timeout single request after 30s
+          -H "Cache-Control: no-cache" \  # Prevent caching
+          "https://nikhilgupta.streamlit.app" || echo "Ping failed"
+          
+          echo "Ping completed at $(date)"
 ```
 
 # Project Structure
