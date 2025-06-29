@@ -80,39 +80,6 @@ python3 -m streamlit run app.py
    
 Visit ```http://localhost:8501``` (or the URL Streamlit provides) to see your digital CV in action.
 
-## 8. Prevent Streamlit app from going to sleep
-
-Steps:
-
-- In your forked repository, go to .github/workflows/keep_alive.yml
-- Replace the placeholder app ```URL``` with your actual ```Streamlit app URL```
-
-```yaml
-name: Keep Streamlit App Awake
-
-on:
-  schedule:
-    - cron: '*/28 * * * *'
-  workflow_dispatch:  # Allows manual triggering
-
-jobs:
-  keep-alive:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Wake and ping app with retries
-        run: |
-          echo "Pinging Streamlit app..."
-          curl -sSfL \
-          --retry 3 \               # Retry up to 3 times
-          --retry-delay 10 \        # Wait 10s between retries
-          --retry-max-time 60 \     # Max 60s for all retries
-          --max-time 30 \           # Timeout single request after 30s
-          -H "Cache-Control: no-cache" \  # Prevent caching
-          "https://nikhilgupta.streamlit.app" || echo "Ping failed"
-          
-          echo "Ping completed at $(date)"
-```
-
 # Project Structure
 
 ```
@@ -120,9 +87,6 @@ Digital-CV/
 ├── .devcontainer/             # Dev container config
 │   └── devcontainer.json      # (for Codespaces / VS Code Remote Containers)
 │
-├── .github/                   # GitHub Actions workflows
-│ └── workflows/
-│ └── keep_alive.yml           # Keeps Streamlit app awake using scheduled pings
 |
 ├── assets/                    # Static assets like resume and photos
 │   ├── Resume.pdf

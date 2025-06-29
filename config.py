@@ -40,8 +40,8 @@ CERTIFICATES = [
 PAGE_TITLE = "Digital CV | Nikhil Gupta"
 PAGE_ICON = ":wave:"
 NAME = "Nikhil Gupta"
-DESCRIPTION = "Experienced Data Engineering Consultant specializing in cloud solutions and automation for scalable, data-driven outcomes."
-EMAIL = "emnikkhil@email.com"
+DESCRIPTION = "Data Engineering Consultant with a strong foundation in big data ecosystems, cloud infrastructure (GCP), and scalable pipeline automation. Passionate about building end-to-end data solutions that power advanced analytics and real-world AI applications."
+EMAIL = "emnikkhil@gmail.com"
 MOBILE = "+91-9858463809"
 
 SOCIAL_MEDIA = {
