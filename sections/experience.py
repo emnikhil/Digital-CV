@@ -4,26 +4,19 @@ def show_experience():
     st.subheader("Experience & Qualifications")
     st.write(
         """
-    - **3.5+ years** of experience in building scalable data pipelines and cloud-native analytics platforms  
-      using **GCP**, **BigQuery**, **Cloud Composer (Airflow)**, and **Dataproc (Spark)**
+    - **3.5+ years** of experience building scalable data pipelines and cloud-based analytics using **GCP**, **BigQuery**, **Airflow**, and **Spark (Dataproc)**
 
-    - Expertise in developing robust **ETL/ELT workflows** using **Python**, **SQL**, and Airflow  
-      for both real-time and batch data processing
+    - Skilled in designing end-to-end **ETL/ELT workflows** with **Python** and **SQL** for real-time and batch processing
 
-    - Proven skills in **cloud data migration**, **performance tuning**, and  
-      optimizing workflows across distributed systems
+    - Strong background in **cloud migration**, **workflow optimization**, and tuning distributed systems
 
-    - Hands-on with **data modeling**, **data quality checks**, and deploying  
-      secure, fault-tolerant pipelines for analytics and ML applications
+    - Experience in **data modeling**, **quality checks**, and deploying reliable pipelines for analytics and ML use cases
 
-    - Domain experience across **retail***, **healthcare**, and **insurance** sectors,  
-      delivering business-aligned, data-driven solutions in global teams
+    - Worked across **retail**, **healthcare**, and **insurance**, delivering data-driven solutions in global teams
 
-    - Passionate about **data science and ML**, with practical exposure to **Spark MLlib**,  
-      data preprocessing, and applied analytics
+    - Practical exposure to **Spark MLlib**, data preprocessing, and applied **machine learning**
 
-    - **B.Tech (Honours)** in **Computer Science and Engineering**, with strong fundamentals in  
-      algorithms, distributed systems, and artificial intelligence
+    - **B.Tech (Honours)** in **Computer Science and Engineering**, with core knowledge in algorithms, systems, and AI
     """
     )
     st.markdown("---")
