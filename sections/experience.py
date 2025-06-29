@@ -16,7 +16,7 @@ def show_experience():
     - Hands-on with **data modeling**, **data quality checks**, and deploying  
       secure, fault-tolerant pipelines for analytics and ML applications
 
-    - Domain experience across **telecom**, **finance**, and **retail** sectors,  
+    - Domain experience across **retail***, **healthcare**, and **insurance** sectors,  
       delivering business-aligned, data-driven solutions in global teams
 
     - Passionate about **data science and ML**, with practical exposure to **Spark MLlib**,  
