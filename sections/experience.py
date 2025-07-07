@@ -4,17 +4,15 @@ def show_experience():
     st.subheader("Experience & Qualifications")
     st.write(
         """
-    - **3.5+ years** of experience building scalable data pipelines and cloud-based analytics using **GCP**, **BigQuery**, **Airflow**, and **Spark (Dataproc)**
+    - **3+ years** of experience building scalable data pipelines and cloud-based analytics using **GCP**, **BigQuery**, **Airflow**, and **Spark (Scala & PySpark)**
 
-    - Skilled in designing end-to-end **ETL/ELT workflows** with **Python** and **SQL** for real-time and batch processing
+    - Skilled in designing end-to-end **ETL/ELT workflows** with **Python**, **Scala**, **PySpark** and **SQL** for real-time and batch processing
 
-    - Strong background in **cloud migration**, **workflow optimization**, and tuning distributed systems
+    - Strong expertise in **cloud migration**, **workflow optimization**, and **performance tuning** of distributed systems
 
-    - Experience in **data modeling**, **quality checks**, and deploying reliable pipelines for analytics and ML use cases
+    - Experienced in **data modeling**, implementing **data quality checks**, and deploying robust pipelines for analytics and **machine learning** use cases
 
-    - Worked across **retail**, **healthcare**, and **insurance**, delivering data-driven solutions in global teams
-
-    - Practical exposure to **Spark MLlib**, data preprocessing, and applied **machine learning**
+    - Delivered data-driven solutions across **retail**, **healthcare**, and **insurance** domains in collaboration with global teams
 
     - **B.Tech (Honours)** in **Computer Science and Engineering**, with core knowledge in algorithms, systems, and AI
     """

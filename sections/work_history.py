@@ -20,7 +20,7 @@ def show_work_history():
     work_entry(
         exl_logo,
         "Exl Service, India | Senior Business Analyst",
-        "Jan' 2025 – Present",
+        "Jan' 2025 - Present",
         """
         - Optimized large-scale pipelines on **BigQuery** and improved staging logic with **Airflow-based orchestration** 
           for real-time and batch analytics across departments.
@@ -42,7 +42,7 @@ def show_work_history():
     work_entry(
         accenture_logo,
         "Accenture, India | Data Engineer",
-        "Jan' 2022 – Jan' 2025",
+        "Jan' 2022 - Jan' 2025",
         """
         - Migrated multi-source data (MySQL, Oracle, JSON, CSV) from on-prem to GCP using **Spark (Scala)** on 
           **Dataproc**, with **Hive** for data warehousing.
@@ -63,7 +63,7 @@ def show_work_history():
     work_entry(
         kmitl_logo,
         "KMITL, Thailand | Research Intern",
-        "Sept' 19 – Oct' 19",
+        "Sept' 19 - Oct' 19",
         """
         - Built a **CNN-based classification model** for beef steak fat grading in collaboration with the **Thailand 
           Department of Livestock**, using real-time image data.
